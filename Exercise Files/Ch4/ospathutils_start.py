@@ -10,9 +10,13 @@ import time
 
 def main():
   # Print the name of the OS
+  # print(os.name)
 
 
   # Check for item existence and type
+  print("Item exists: " + str(path.exists("textfile")))
+  print("Item is a file: " + str(path.isfile("textfile")))
+  print("Item is a directory: " + str(path.isdir("textfile")))
 
   
   # Work with file paths
@@ -26,5 +30,5 @@ def main():
 
   
 if __name__ == "__main__":
-  
+
   main()
